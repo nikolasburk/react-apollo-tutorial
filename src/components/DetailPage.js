@@ -22,7 +22,7 @@ class DetailPage extends Component {
     )
   }
 
-  _renderAction = ({ title, isPublished }) => {
+  _renderAction = ({ id, isPublished = false }) => {
     const publishButton = (
       <a
       className="f6 dim br1 ba ph3 pv2 mb2 dib black pointer"
