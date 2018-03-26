@@ -1,6 +1,6 @@
 mutation {
   createPost(data: {
-    title: "Hello World!"
+    title: "Hello World from the GraphQL server!"
     text: "👋"
     isPublished: false
   }) {
