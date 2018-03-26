@@ -2,6 +2,7 @@ mutation {
   createPost(data: {
     title: "Hello World!"
     text: "👋"
+    isPublished: false
   }) {
     id
   }
