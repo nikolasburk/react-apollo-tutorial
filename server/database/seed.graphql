@@ -1,0 +1,7 @@
+mutation {
+  createPosts(data: {
+    title: "Hello World!"
+    text: "👋"
+  }) {
+    id
+  }
