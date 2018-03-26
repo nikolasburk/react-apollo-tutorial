@@ -42,7 +42,7 @@ const server = new GraphQLServer({
     ...req,
     db: new Prisma({
       typeDefs: 'src/generated/prisma.graphql',
-      endpoint: 'https://eu1.prisma.sh/public-warpcrow-597/my-react-basic/dev',
+      endpoint: '__PRISMA_ENDPOINT__',
       secret: 'mysecret123',
       debug: true,
     }),
