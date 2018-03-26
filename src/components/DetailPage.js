@@ -40,7 +40,7 @@ class DetailPage extends Component {
     )
   }
 
-  _renderAction = ({ id, isPublished }) => {
+  _renderAction = ({ id, isPublished = false }) => {
     const publishMutation = (
       <Mutation
         mutation={PUBLISH_MUTATION}
@@ -127,19 +127,6 @@ class DetailPage extends Component {
     return deleteMutation
   }
 
-  deletePost = async id => {
-    await this.props.deletePost({
-      variables: { id },
-    })
-    this.props.history.replace('/')
-  }
-
-  publishDraft = async id => {
-    await this.props.publishDraft({
-      variables: { id },
-    })
-    this.props.history.replace('/')
-  }
 }
 
 const POST_QUERY = gql`
